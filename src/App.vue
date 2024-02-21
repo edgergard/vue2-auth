@@ -1,15 +1,21 @@
 <template>
   <div id="app">
-    111
+    <ViewContainer>
+      <AuthView />
+    </ViewContainer>
   </div>
 </template>
 
 <script>
-
+import { ViewContainer } from './components';
+import { AuthView } from './views';
 
 export default {
   name: 'App',
-  components: {}
+  components: {
+    ViewContainer,
+    AuthView
+  }
 }
 </script>
 
