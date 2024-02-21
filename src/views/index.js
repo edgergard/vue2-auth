@@ -1,3 +1,4 @@
-import AuthView from './AuthView.vue';
+import SignInView from './SignInView.vue';
+import SignUpView from './SignUpView.vue';
 
-export { AuthView };
+export { SignInView, SignUpView };

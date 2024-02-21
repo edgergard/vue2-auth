@@ -1,16 +1,14 @@
 <template>
-  <div>
-    <AuthForm />
-  </div>
+  <SignUpForm />
 </template>
 
 <script>
-import { AuthForm } from '../components';
+import { SignUpForm } from '../components';
 
 export default {
-  name: 'AuthView',
+  name: 'SignInView',
   components: {
-    AuthForm,
+    SignUpForm,
   }
 }
 </script>

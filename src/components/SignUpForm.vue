@@ -1,25 +1,47 @@
 <template>
   <div class="container">
     <div class="card">
-      <p class="title">Login</p>
+      <p class="title">Sign up</p>
 
       <form action="" class="form">
         <div class="input-container">
-          <label for="" class="label">Email</label>
-          <input type="email" class="input">
+          <label for="email" class="label">Email</label>
+          <input
+            type="email"
+            name="email"
+            id="email"
+            class="input"
+            placeholder="user123@gmail.com"
+          >
+        </div>
+
+        <div class="input-container">
+          <label for="name" class="label">Name</label>
+          <input
+            type="email"
+            name="name"
+            id="name"
+            class="input"
+            placeholder="Christopher McGill"
+          >
         </div>
 
 
         <div class="input-container">
-          <label for="" class="label">Password</label>
-          <input type="password" class="input">
-          <label class="label password-link">Forgot Password?</label>
+          <label for="password" class="label">Password</label>
+          <input 
+            type="password"
+            name="password"
+            id="password"
+            class="input"
+            placeholder="12345"
+          >
         </div>
 
-        <button class="button">Sign in</button>
-        <div class="register-container">
-          <p>Don’t have an account yet?</p>
-          <p class="register-link">Register for free</p>
+        <button class="button">Sign up</button>
+        <div class="link-container">
+          <p>Already have an account?</p>
+          <router-link to="/" class="link">Sign in</router-link>
         </div>
       </form>
     </div>
@@ -28,7 +50,7 @@
 
 <script>
   export default {
-    name: 'AuthForm',
+    name: 'RegisterForm',
   }
 </script>
 
@@ -97,31 +119,22 @@
   }
 }
 
-.password-link {
-  width: 170px;
-  margin-top: 10px;
-  cursor: pointer;
-  transition-duration: 0.3s;
-
-  &:hover {
-    color: #F25019;
-  }
-}
-
-.register-container {
-  display: flex;
-  justify-content: center;
-  gap: 8px;
-  font-size: 18px;
-}
-
-.register-link {
+.link {
+  color: #000;
+  text-decoration: none;
   font-weight: 700;
   cursor: pointer;
   transition-duration: 0.3s;
 
   &:hover {
     color: #F25019;
+  }
+
+  &-container {
+    display: flex;
+    justify-content: center;
+    gap: 8px;
+    font-size: 18px;
   }
 }
 </style>

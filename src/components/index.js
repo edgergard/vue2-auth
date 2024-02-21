@@ -1,4 +1,5 @@
 import ViewContainer from './ViewContainer.vue';
-import AuthForm from './AuthForm.vue';
+import SignInForm from './SignInForm.vue';
+import SignUpForm from './SignUpForm.vue';
 
-export { ViewContainer, AuthForm };
+export { ViewContainer, SignInForm, SignUpForm };
